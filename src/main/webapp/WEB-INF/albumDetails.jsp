@@ -83,6 +83,9 @@
         <input type="file" name="file" accept=".gif,.jpg,.jpeg,.png">
         <input type="submit" value="Upload">
     </form>
+    <form action="/albums/${requestScope.album.id}/delete" method="GET">
+        <input type="submit" value="Delete">
+    </form>
 
     <nav>
         <a href="/albums">Back to list of albums</a>
